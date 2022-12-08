@@ -19,13 +19,13 @@ const NavBar = () => {
       subMenu : [
         {
           title: "Students",
-          link: "characters/students",
+          link: "students",
           src: "student",
           icon: <FaGraduationCap />
         },
         {
           title: "Staff",
-          link: "characters/staff",
+          link: "staff",
           src: "Staff",
           icon: <GiTeacher />
         }

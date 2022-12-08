@@ -3,10 +3,10 @@ import NavBar from './NavBar'
 
 const Layout = ({ children }: any) => {
   return (
-    <div className="flex bg-background-normal h-full overflow-auto">
+    <div className="flex bg-background-normal">
       <NavBar/>
       
-      <div className="w-100 flex justify-center p-7">
+      <div className="w-full flex justify-center p-7">
         {children}
       </div>
     </div>
