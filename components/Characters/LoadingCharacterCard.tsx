@@ -10,6 +10,7 @@ const LoadingCharacterCard = ({props, count}: IContentLoaderProps) => {
   while (index < count) {
     components.push(
       <ContentLoader
+      key={`cl-${index}`}
       className={`flex m-4 shrink-0 w-48 h-96 rounded-lg overflow-hidden`} 
       speed={2}
       width={200}

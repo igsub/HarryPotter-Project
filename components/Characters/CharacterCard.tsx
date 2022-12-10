@@ -1,4 +1,6 @@
-import { Character } from "../pages/api/characters/types";
+'use client'
+
+import { Character } from "../../pages/api/client/characters/types";
 
 interface ICharacterCardProps {
   character: Character

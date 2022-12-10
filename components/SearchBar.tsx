@@ -6,7 +6,7 @@ interface ISearchBarProps {
 const SearchBar = ({ searchText, setSearchText }: ISearchBarProps) => {
   
   return  (
-    <div className="input-group justify-center relative flex flex-wrap items-stretch w-full mb-4">
+    <div className="input-group relative flex flex-nowrap items-stretch sm:w-full xl:w-1/2 mb-4">
       <input value={searchText} onChange={(e) => setSearchText(e.target.value)} type="search" className="form-control relative flex-auto min-w-0 block px-3 py-1.5 text-base font-normal text-white bg-background-normal bg-clip-padding border border-solid border-background-light rounded transition ease-in-out m-0 focus:text-white focus:bg-background-light focus:border-background-dark focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" />
       <button className="btn px-6 py-2.5 bg-background-dark text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-background-light hover:shadow-lg focus:bg-background-light  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-background-light active:shadow-lg transition duration-150 ease-in-out flex items-center" type="button" id="button-addon2">
         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" className="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

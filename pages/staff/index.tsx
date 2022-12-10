@@ -1,7 +1,7 @@
 'use client'
 
-import CharactersCardView from "../../components/CharactersCardView"
-import { useStaff } from "../api/characters/charactersAPI"
+import CharactersCardView from "../../components/Characters/CharactersCardView"
+import { useStaff } from "../api/client/characters/charactersAPI"
 
 const Staff = (props: any) => {
   const { data, isLoading } = useStaff()
