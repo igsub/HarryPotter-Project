@@ -10,7 +10,7 @@ export interface Character {
   ancestry:         string;
   eyeColour:        string;
   hairColour:       string;
-  wand:             Wand;
+  wand?:             Wand;
   patronus:         string;
   hogwartsStudent:  boolean;
   hogwartsStaff:    boolean;

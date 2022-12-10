@@ -1,0 +1,15 @@
+export const fieldTranslate = {
+    "actor" : "Actor",
+    "alternate_names" : "Alternate Names",
+    "species" : "Species",
+    "gender" : "Gender",
+    "house" : "House",
+    "dateOfBirth" : "Date Of Birth",
+    "yearOfBirth" : "Year Of Birth",
+    "wizard" : "Wizard",
+    "ancestry" : "Ancestry",
+    "eyeColour" : "Eye Colour",
+    "hairColour" : "Hair Colour",
+    "wand" : "Wand",
+    "patronus" : "Patronus",
+}

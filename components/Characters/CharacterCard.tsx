@@ -3,13 +3,14 @@
 import { Character } from "../../pages/api/client/characters/types";
 
 interface ICharacterCardProps {
-  character: Character
+  character: Character;
+  onClick: (character: Character) => void;
 }
 
-const CharacterCard = ({ character }: ICharacterCardProps) => {
+const CharacterCard = ({ character, onClick }: ICharacterCardProps) => {
 
   return <div className="flex flex-col m-4 shrink-0 w-48 h-96 rounded-lg overflow-hidden shadow-lg shadow-background-light bg-background-dark">
-    <img className={`justify-center w-48 h-56 object-cover ${!character.image && "opacity-50"}`} src={character.image || '/harry-potter-200-white.png'} alt="image"/>
+    <img onClick={() => onClick(character)} className={`justify-center cursor-pointer w-48 h-56 object-cover ${!character.image && "opacity-50"}`} src={character.image || '/harry-potter-200-white.png'} alt="image"/>
     <div className="px-6 py-4">
       <div className="font-bold text-xl text-white">{character.name}</div>
       <div className="flex justify-start flex-col">  
