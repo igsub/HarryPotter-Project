@@ -72,7 +72,7 @@ const CharactersCardView = ({ data, isLoading }: ICharactersCardView) => {
           </div> 
           <div className="flex flex-row flex-wrap justify-evenly mb-auto">
             {isLoading && !(filteredData.length > 0) ? 
-              <LoadingCharacterCard count={6} /> 
+              <LoadingCharacterCard count={12} /> 
               : filteredData?.map((character: Character) => <CharacterCard character={character} onClick={onCardClick} />)}
           </div>
           <div className="flex justify-center">

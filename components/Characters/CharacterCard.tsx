@@ -19,8 +19,6 @@ const CharacterCard = ({ character, onClick }: ICharacterCardProps) => {
           <p className="text-white text-sm font-semibold m-0 p-0">Born:&nbsp;</p>
           <p className="text-white text-sm italic">{character.dateOfBirth || character.yearOfBirth || 'unknown'}</p>
         </div>
-        <p>{character.patronus}</p>
-          
       </div>
     </div>
   </div>

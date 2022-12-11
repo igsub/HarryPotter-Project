@@ -9,6 +9,12 @@ module.exports = {
 					normal: "#1e293b",
 					dark: "#0f172a",
 				},
+				secondary: {
+					lighter: "#c4b5fd",
+					light: "#a78bfa",
+					normal: "#7c3aed",
+					dark: "#5b21b6",
+				},
 				gryffindor: {
 					"dark-red": "#740001",
 					"light-red": "#AE0001",

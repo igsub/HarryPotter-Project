@@ -18,7 +18,7 @@ const LoadingCharacterCard = ({props, count}: IContentLoaderProps) => {
       viewBox="0 0 200 400"
       backgroundColor="#0f172a"
       foregroundColor="#7c8a9c"
-      opacity={1 - index * 0.2}
+      opacity={1 - index * 0.1}
       {...props}
       >
         <rect x="2" y="253" rx="3" ry="3" width="185" height="21" /> 
