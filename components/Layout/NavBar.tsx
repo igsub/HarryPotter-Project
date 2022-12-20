@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react"
-import { BsArrowLeftShort } from "react-icons/bs"
+import { BsArrowLeftShort, BsFillHouseDoorFill } from "react-icons/bs"
 import { FaHatWizard, FaGraduationCap } from "react-icons/fa"
 import { GiTeacher } from "react-icons/gi"
 
@@ -31,6 +31,12 @@ const NavBar = () => {
         }
       ]
     },
+    {
+      title: "Houses",
+      link: "houses",
+      src: "Houses",
+      icon: <BsFillHouseDoorFill />
+    }
   ];
 
   return <div className="flex">
@@ -40,11 +46,11 @@ const NavBar = () => {
           <img onClick={() => router.push('/')} src='/harry-potter-200-white.png' className={`object-scale-down ${open && "rotate-[360deg]"} duration-500 cursor-pointer`}/>
       </div>
 
-      <ul className="pt-2" key={"items"}>
+      <ul className="pt-2" key="navBarItems">
         {
           menu.map((menuItem, index) => (
             <>
-              <li key={`${menuItem.title}`} className="text-gray-300 flex items-center">
+              <li key={`${menuItem.title + index}`} className="text-gray-300 flex items-center">
                 <div className="flex flex-col w-full">
                 
                 <Link href={`/${menuItem.link}`} className={`flex text-md hover:bg-background-light p-4 ${!open && "pl-2"} rounded-md gap-x-4 cursor-pointer w-full duration-300`}>
@@ -57,7 +63,7 @@ const NavBar = () => {
                 {menuItem.subMenu && (
                   <ul className="flex flex-col justify-center bg-background-normal rounded-md" key={`subItems-${menuItem.title}`}>
                     {menuItem.subMenu.map((subMenuItem, smIndex) => (
-                      <li key={subMenuItem.title}>
+                      <li key={subMenuItem.title + smIndex}>
                         <Link href={`/${subMenuItem.link}`} className={`flex text-md hover:bg-background-light ${open ? "pl-8": "pl-2"} pb-2 pt-2 rounded-md gap-x-4 cursor-pointer w-full duration-300`}>
                           <span className="text-2xl block float-left">
                             {subMenuItem.icon}

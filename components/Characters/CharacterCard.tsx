@@ -9,7 +9,7 @@ interface ICharacterCardProps {
 
 const CharacterCard = ({ character, onClick }: ICharacterCardProps) => {
 
-  return <div className="flex flex-col m-4 shrink-0 w-48 h-96 rounded-lg overflow-hidden shadow-lg shadow-background-light bg-background-dark">
+  return <div className="flex flex-col sm:m-0 md:m-8 shrink-0 overflow-hidden w-48 h-96 rounded-lg shadow-lg shadow-background-light bg-background-dark md:transition md:duration-500 md:hover:scale-125">
     <img onClick={() => onClick(character)} className={`justify-center cursor-pointer w-48 h-56 object-cover ${!character.image && "opacity-50"}`} src={character.image || '/harry-potter-200-white.png'} alt="image"/>
     <div className="px-6 py-4">
       <div className="font-bold text-xl text-white">{character.name}</div>

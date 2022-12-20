@@ -70,14 +70,14 @@ const CharactersCardView = ({ data, isLoading }: ICharactersCardView) => {
           <div className="flex justify-center">
             <SearchBar searchText={searchText} setSearchText={onSearchTextChange} />
           </div> 
-          <div className="flex flex-row flex-wrap justify-evenly mb-auto">
+          <div className="flex sm:flex-col md:flex-row flex-wrap justify-evenly mb-auto">
             {isLoading && !(filteredData.length > 0) ? 
               <LoadingCharacterCard count={12} /> 
               : filteredData?.map((character: Character) => <CharacterCard character={character} onClick={onCardClick} />)}
           </div>
           <div className="flex justify-center">
               <nav aria-label="Page navigation example">
-              <ul className="inline-flex items-center -space-x-px">
+              <ul key="pagination" className="inline-flex items-center -space-x-px">
                   <li key="previous">
                     <a onClick={() => onBackPageClick()} className="cursor-pointer block px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
                         <span className="sr-only">Previous</span>

@@ -29,6 +29,9 @@ module.exports = {
 				},
 			},
 		},
+		backgroundImage: {
+			hogwarts: "url('/hogwarts.jpg')",
+		},
 	},
 	plugins: [],
 	purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],

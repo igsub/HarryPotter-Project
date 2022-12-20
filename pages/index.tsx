@@ -1,3 +1,4 @@
+import { NextApiRequest, NextApiResponse } from 'next'
 import { ReactNode } from 'react'
 import Layout from '../components/Layout/Layout'
 

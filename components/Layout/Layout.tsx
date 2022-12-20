@@ -3,10 +3,12 @@ import NavBar from './NavBar'
 
 const Layout = ({ children }: any) => {
   return (
-    <div className='flex bg-background-normal'>
-      <NavBar />
-      <div className='w-full p-4'>
-        {children}
+    <div className='flex bg-hogwarts min-h-screen w-full bg-cover bg-center'>
+      <div className="flex w-full h-full backdrop-blur-md">
+        <NavBar />
+        <div className='w-full min-h-screen p-4'>
+          {children}
+        </div>
       </div>
     </div>
   )
